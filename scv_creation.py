@@ -3,7 +3,7 @@ import pandas as pd
 import yfinance as yf
 from datetime import date, timedelta
 
-newsapi = NewsApiClient(api_key='96f6b944caaa44db88f1178f8f47f540')
+newsapi = NewsApiClient(api_key='your api key')
 
 def fetch_data(start, end):
     btc_data = yf.download('BTC-USD', start, end, progress=False)
